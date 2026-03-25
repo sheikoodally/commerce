@@ -5,8 +5,10 @@ import { Footer } from "../components/Footer.tsx";
 export default function Layout() {
   return (
     <>
-      <Nav />
-      <main>
+      <div className="relative">
+        <Nav />
+      </div>
+      <main className="pt-16">
         <Outlet /> {/* child routes render here */}
       </main>
       <Footer />
